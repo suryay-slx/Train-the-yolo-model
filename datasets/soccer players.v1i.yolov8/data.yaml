@@ -1,0 +1,15 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+nc: 3
+names:
+- '0'
+- '1'
+- '2'
+roboflow:
+  workspace: data-wvhvv
+  project: soccer-players-5fuqs-vyq67
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/data-wvhvv/soccer-players-5fuqs-vyq67/dataset/1
+path: /home/surya/c/datasets/soccer players.v1i.yolov8

@@ -1,0 +1,31 @@
+network:
+  name: yolo_v8_custom
+  inputs:
+    - name: images
+      shape: [1, 3, 960, 960]
+      format: NCHW
+      normalization:
+        mean: [0.0, 0.0, 0.0]
+        std:  [1.0, 1.0, 1.0]
+        rescale: 1.0
+  outputs:
+    - name: output0
+
+postprocess:
+  type: yolo_v8
+  num_classes: 3
+  iou_threshold: 0.65
+  score_threshold: 0.25
+  input_shape: [960, 960]
+
+quantization:
+  scheme: symmetric
+  per_channel: true
+  calibration:
+    images_dir: hailo_build/calib
+    max_images: 800
+
+compiler:
+  target_device: hailo8l
+  output_dir: hailo_build/hef
+  output_name: model

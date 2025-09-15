@@ -1,0 +1,16 @@
+[info] No GPU chosen and no suitable GPU found, falling back to CPU.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1756796299.143944      29 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1756796299.151299      29 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+Traceback (most recent call last):
+  File "/local/workspace/hailo_virtualenv/bin/hailo", line 5, in <module>
+    from hailo_sdk_client.tools.cmd_utils.main import main
+  File "/local/workspace/hailo_virtualenv/lib/python3.10/site-packages/hailo_sdk_client/tools/cmd_utils/__init__.py", line 30, in <module>
+    shutil.copytree(
+  File "/usr/lib/python3.10/shutil.py", line 559, in copytree
+    return _copytree(entries=entries, src=src, dst=dst, symlinks=symlinks,
+  File "/usr/lib/python3.10/shutil.py", line 457, in _copytree
+    os.makedirs(dst, exist_ok=dirs_exist_ok)
+  File "/usr/lib/python3.10/os.py", line 225, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/local/workspace/hailo_virtualenv/bin/hailo_autocompletion'

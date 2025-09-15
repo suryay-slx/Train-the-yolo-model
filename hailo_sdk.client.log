@@ -1,0 +1,323 @@
+2025-09-02 11:54:04,988 - INFO - main.py:34 - Current Time: 11:54:04, 09/02/25
+2025-09-02 11:54:05,995 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz, Number Of Cores: 8, Utilization: 6.9%
+2025-09-02 11:54:05,996 - INFO - main.py:50 - Memory: Total: 7GB, Available: 1GB
+2025-09-02 11:54:05,996 - INFO - main.py:54 - System info: OS: Linux, Kernel: 6.14.0-28-generic
+2025-09-02 11:54:05,997 - INFO - main.py:55 - Hailo DFC Version: 3.32.0
+2025-09-02 11:54:06,000 - INFO - main.py:60 - HailoRT Version: 4.22.0
+2025-09-02 11:54:06,011 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2025-09-02 11:54:06,011 - INFO - main.py:109 - Running `hailo parser onnx hailo_build/exports/best.onnx --net-name yolo_v8_custom --har-path hailo_build/hef/model.har --input-format images=NCHW --tensor-shapes images=[1,3,960,960] --parsing-report-path hailo_build/logs/1_parse.log`
+2025-09-02 11:54:06,062 - INFO - parser.py:158 - Translation started on ONNX model yolo_v8_custom
+2025-09-02 11:54:06,144 - INFO - parser.py:193 - Restored ONNX model yolo_v8_custom (completion time: 00:00:00.08)
+2025-09-02 11:54:06,392 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.33)
+2025-09-02 11:54:08,931 - INFO - parser.py:274 - Simplified ONNX model for a parsing retry attempt (completion time: 00:00:02.87)
+2025-09-02 11:54:37,633 - INFO - main.py:34 - Current Time: 11:54:37, 09/02/25
+2025-09-02 11:54:38,639 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz, Number Of Cores: 8, Utilization: 1.3%
+2025-09-02 11:54:38,640 - INFO - main.py:50 - Memory: Total: 7GB, Available: 2GB
+2025-09-02 11:54:38,640 - INFO - main.py:54 - System info: OS: Linux, Kernel: 6.14.0-28-generic
+2025-09-02 11:54:38,642 - INFO - main.py:55 - Hailo DFC Version: 3.32.0
+2025-09-02 11:54:38,644 - INFO - main.py:60 - HailoRT Version: 4.22.0
+2025-09-02 11:54:38,653 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2025-09-02 11:54:38,654 - INFO - main.py:109 - Running `hailo optimize hailo_build/hef/model.har --har-path hailo_build/hef/model_quant.har --calib-path hailo_build/calib --dfc hailo_build/model.yaml --alls /alls/yolov8.alls --hw-arch hailo8l --optimization-report-path hailo_build/logs/2_optimize.log`
+2025-09-02 11:54:51,188 - INFO - main.py:34 - Current Time: 11:54:51, 09/02/25
+2025-09-02 11:54:52,194 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz, Number Of Cores: 8, Utilization: 6.3%
+2025-09-02 11:54:52,195 - INFO - main.py:50 - Memory: Total: 7GB, Available: 2GB
+2025-09-02 11:54:52,195 - INFO - main.py:54 - System info: OS: Linux, Kernel: 6.14.0-28-generic
+2025-09-02 11:54:52,197 - INFO - main.py:55 - Hailo DFC Version: 3.32.0
+2025-09-02 11:54:52,198 - INFO - main.py:60 - HailoRT Version: 4.22.0
+2025-09-02 11:54:52,208 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2025-09-02 11:54:52,209 - INFO - main.py:109 - Running `hailo compiler hailo_build/hef/model_quant.har --hef-path hailo_build/hef/model.hef --hw-arch hailo8l --compiler-report-path hailo_build/logs/3_compile.log`
+2025-09-02 11:58:50,680 - INFO - main.py:34 - Current Time: 11:58:50, 09/02/25
+2025-09-02 11:58:51,688 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz, Number Of Cores: 8, Utilization: 12.6%
+2025-09-02 11:58:51,689 - INFO - main.py:50 - Memory: Total: 7GB, Available: 2GB
+2025-09-02 11:58:51,690 - INFO - main.py:54 - System info: OS: Linux, Kernel: 6.14.0-28-generic
+2025-09-02 11:58:51,691 - INFO - main.py:55 - Hailo DFC Version: 3.32.0
+2025-09-02 11:58:51,693 - INFO - main.py:60 - HailoRT Version: 4.22.0
+2025-09-02 11:58:51,707 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2025-09-02 11:58:51,707 - INFO - main.py:109 - Running `hailo parser onnx hailo_build/exports/best.onnx --net-name yolo_v8_custom --har-path hailo_build/hef/model.har --input-format images=NCHW --tensor-shapes images=[1,3,960,960] --end-node-names /model.22/Concat_3 -y --parsing-report-path hailo_build/logs/1_parse.log`
+2025-09-02 11:58:51,747 - INFO - parser.py:158 - Translation started on ONNX model yolo_v8_custom
+2025-09-02 11:58:51,834 - INFO - parser.py:193 - Restored ONNX model yolo_v8_custom (completion time: 00:00:00.09)
+2025-09-02 11:58:52,117 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.37)
+2025-09-02 11:58:54,660 - INFO - onnx_translator.py:2640 - NMS structure of yolov8 (or equivalent architecture) was detected.
+2025-09-02 11:58:54,666 - INFO - onnx_translator.py:2642 - In order to use HailoRT post-processing capabilities, these end node names should be used: /model.22/cv2.0/cv2.0.2/Conv /model.22/cv3.0/cv3.0.2/Conv /model.22/cv2.1/cv2.1.2/Conv /model.22/cv3.1/cv3.1.2/Conv /model.22/cv2.2/cv2.2.2/Conv /model.22/cv3.2/cv3.2.2/Conv.
+2025-09-02 11:58:54,798 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'yolo_v8_custom/input_layer1'.
+2025-09-02 11:58:54,798 - INFO - parser.py:367 - End nodes mapped from original model: '/model.22/Concat_3'.
+2025-09-02 11:58:54,885 - INFO - parser.py:288 - Translation completed on ONNX model yolo_v8_custom (completion time: 00:00:03.14)
+2025-09-02 11:58:54,888 - WARNING - client_runner.py:1738 - hw_arch parameter not given, using the default hw_arch hailo8.
+If another device is the target, please run again using one of hailo8, hailo8r, hailo8l
+2025-09-02 11:58:55,822 - INFO - parser.py:158 - Translation started on ONNX model yolo_v8_custom
+2025-09-02 11:58:55,866 - INFO - parser.py:193 - Restored ONNX model yolo_v8_custom (completion time: 00:00:00.04)
+2025-09-02 11:58:56,098 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.28)
+2025-09-02 11:58:57,206 - INFO - onnx_translator.py:2640 - NMS structure of yolov8 (or equivalent architecture) was detected.
+2025-09-02 11:58:57,206 - INFO - onnx_translator.py:2642 - In order to use HailoRT post-processing capabilities, these end node names should be used: /model.22/cv2.0/cv2.0.2/Conv /model.22/cv3.0/cv3.0.2/Conv /model.22/cv2.1/cv2.1.2/Conv /model.22/cv3.1/cv3.1.2/Conv /model.22/cv2.2/cv2.2.2/Conv /model.22/cv3.2/cv3.2.2/Conv.
+2025-09-02 11:58:57,271 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'yolo_v8_custom/input_layer1'.
+2025-09-02 11:58:57,271 - INFO - parser.py:367 - End nodes mapped from original model: '/model.22/cv2.0/cv2.0.2/Conv', '/model.22/cv3.0/cv3.0.2/Conv', '/model.22/cv2.1/cv2.1.2/Conv', '/model.22/cv3.1/cv3.1.2/Conv', '/model.22/cv2.2/cv2.2.2/Conv', '/model.22/cv3.2/cv3.2.2/Conv'.
+2025-09-02 11:58:58,758 - INFO - parser.py:288 - Translation completed on ONNX model yolo_v8_custom (completion time: 00:00:02.94)
+2025-09-02 11:58:59,432 - INFO - client_runner.py:504 - Appending model script commands to yolo_v8_custom from string
+2025-09-02 11:58:59,460 - INFO - parser_cli.py:332 - Added nms postprocess command to model script.
+2025-09-02 11:58:59,553 - INFO - client_runner.py:1881 - Saved HAR to: /work/hailo_build/hef/model.har
+2025-09-02 11:58:59,553 - INFO - client_runner.py:2280 - Saved parsing report to: hailo_build/logs/1_parse.log
+2025-09-02 11:59:10,780 - INFO - main.py:34 - Current Time: 11:59:10, 09/02/25
+2025-09-02 11:59:11,786 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz, Number Of Cores: 8, Utilization: 22.2%
+2025-09-02 11:59:11,787 - INFO - main.py:50 - Memory: Total: 7GB, Available: 2GB
+2025-09-02 11:59:11,787 - INFO - main.py:54 - System info: OS: Linux, Kernel: 6.14.0-28-generic
+2025-09-02 11:59:11,789 - INFO - main.py:55 - Hailo DFC Version: 3.32.0
+2025-09-02 11:59:11,792 - INFO - main.py:60 - HailoRT Version: 4.22.0
+2025-09-02 11:59:11,804 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2025-09-02 11:59:11,804 - INFO - main.py:109 - Running `hailo optimize hailo_build/hef/model.har --calib-set-path hailo_build/calib_set.npy --model-script /alls/yolov8.alls --hw-arch hailo8l --output-har-path hailo_build/hef/model_quant.har --optimization-report-path hailo_build/logs/2_optimize.log`
+2025-09-02 11:59:24,313 - INFO - main.py:34 - Current Time: 11:59:24, 09/02/25
+2025-09-02 11:59:25,318 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz, Number Of Cores: 8, Utilization: 6.3%
+2025-09-02 11:59:25,319 - INFO - main.py:50 - Memory: Total: 7GB, Available: 2GB
+2025-09-02 11:59:25,319 - INFO - main.py:54 - System info: OS: Linux, Kernel: 6.14.0-28-generic
+2025-09-02 11:59:25,321 - INFO - main.py:55 - Hailo DFC Version: 3.32.0
+2025-09-02 11:59:25,322 - INFO - main.py:60 - HailoRT Version: 4.22.0
+2025-09-02 11:59:25,332 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2025-09-02 11:59:25,333 - INFO - main.py:109 - Running `hailo compiler hailo_build/hef/model_quant.har --hw-arch hailo8l --output-dir hailo_build/hef`
+2025-09-02 11:59:58,618 - INFO - main.py:34 - Current Time: 11:59:58, 09/02/25
+2025-09-02 11:59:59,624 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz, Number Of Cores: 8, Utilization: 1.0%
+2025-09-02 11:59:59,625 - INFO - main.py:50 - Memory: Total: 7GB, Available: 2GB
+2025-09-02 11:59:59,625 - INFO - main.py:54 - System info: OS: Linux, Kernel: 6.14.0-28-generic
+2025-09-02 11:59:59,627 - INFO - main.py:55 - Hailo DFC Version: 3.32.0
+2025-09-02 11:59:59,628 - INFO - main.py:60 - HailoRT Version: 4.22.0
+2025-09-02 11:59:59,636 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2025-09-02 11:59:59,636 - INFO - main.py:109 - Running `hailo compiler hailo_build/hef/model_quant.har --hw-arch hailo8l --hef-output hailo_build/hef`
+2025-09-02 12:05:15,085 - INFO - main.py:34 - Current Time: 12:05:15, 09/02/25
+2025-09-02 12:05:16,091 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz, Number Of Cores: 8, Utilization: 17.5%
+2025-09-02 12:05:16,092 - INFO - main.py:50 - Memory: Total: 7GB, Available: 2GB
+2025-09-02 12:05:16,092 - INFO - main.py:54 - System info: OS: Linux, Kernel: 6.14.0-28-generic
+2025-09-02 12:05:16,094 - INFO - main.py:55 - Hailo DFC Version: 3.32.0
+2025-09-02 12:05:16,096 - INFO - main.py:60 - HailoRT Version: 4.22.0
+2025-09-02 12:05:16,107 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2025-09-02 12:05:16,107 - INFO - main.py:109 - Running `hailo optimize hailo_build/hef/model.har --calib-set-path hailo_build/calib_set.npy --model-script /alls/yolov8.alls --hw-arch hailo8l --output-har-path hailo_build/hef/model_quant.har --optimization-report-path hailo_build/logs/2_optimize.log`
+2025-09-02 12:09:11,729 - INFO - main.py:34 - Current Time: 12:09:11, 09/02/25
+2025-09-02 12:09:12,735 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz, Number Of Cores: 8, Utilization: 0.8%
+2025-09-02 12:09:12,736 - INFO - main.py:50 - Memory: Total: 7GB, Available: 2GB
+2025-09-02 12:09:12,736 - INFO - main.py:54 - System info: OS: Linux, Kernel: 6.14.0-28-generic
+2025-09-02 12:09:12,737 - INFO - main.py:55 - Hailo DFC Version: 3.32.0
+2025-09-02 12:09:12,738 - INFO - main.py:60 - HailoRT Version: 4.22.0
+2025-09-02 12:09:12,742 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2025-09-02 12:09:12,742 - INFO - main.py:109 - Running `hailo har-onnx-rt --model hailo_build/exports/best.onnx --input-images-dir hailo_build/calib --image-shape 960,960 --output hailo_build/calib_set.npy`
+2025-09-02 12:09:33,132 - INFO - main.py:34 - Current Time: 12:09:33, 09/02/25
+2025-09-02 12:09:34,138 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz, Number Of Cores: 8, Utilization: 1.1%
+2025-09-02 12:09:34,139 - INFO - main.py:50 - Memory: Total: 7GB, Available: 2GB
+2025-09-02 12:09:34,139 - INFO - main.py:54 - System info: OS: Linux, Kernel: 6.14.0-28-generic
+2025-09-02 12:09:34,141 - INFO - main.py:55 - Hailo DFC Version: 3.32.0
+2025-09-02 12:09:34,142 - INFO - main.py:60 - HailoRT Version: 4.22.0
+2025-09-02 12:09:34,145 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2025-09-02 12:09:34,145 - INFO - main.py:109 - Running `hailo optimize hailo_build/hef/model.har --hw-arch hailo8l --calib-set-path hailo_build/calib_set.npy --model-script /alls/yolov8.alls --output-har-path hailo_build/hef/model_quant.har`
+2025-09-02 12:09:34,234 - WARNING - client_runner.py:1904 - hw_arch from HAR is hailo8 but client runner was initialized with hailo8l. Using hailo8l
+2025-09-02 12:09:34,785 - INFO - client_runner.py:501 - Loading model script commands to yolo_v8_custom from /alls/yolov8.alls
+2025-09-02 12:13:04,843 - INFO - main.py:34 - Current Time: 12:13:04, 09/02/25
+2025-09-02 12:13:05,849 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz, Number Of Cores: 8, Utilization: 1.4%
+2025-09-02 12:13:05,850 - INFO - main.py:50 - Memory: Total: 7GB, Available: 2GB
+2025-09-02 12:13:05,850 - INFO - main.py:54 - System info: OS: Linux, Kernel: 6.14.0-28-generic
+2025-09-02 12:13:05,851 - INFO - main.py:55 - Hailo DFC Version: 3.32.0
+2025-09-02 12:13:05,852 - INFO - main.py:60 - HailoRT Version: 4.22.0
+2025-09-02 12:13:05,859 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2025-09-02 12:13:05,859 - INFO - main.py:109 - Running `hailo optimize hailo_build/hef/model.har --hw-arch hailo8l --calib-set-path hailo_build/calib_set.npy --output-har-path hailo_build/hef/model_quant.har`
+2025-09-02 12:13:05,947 - WARNING - client_runner.py:1904 - hw_arch from HAR is hailo8 but client runner was initialized with hailo8l. Using hailo8l
+2025-09-02 12:13:06,615 - INFO - nms_postprocess_command.py:385 - For NMS architecture yolov8 the default engine is cpu. For other engine please use the 'engine' flag in the nms_postprocess model script command. If the NMS has been added during parsing, please parse the model again without confirming the addition of the NMS, and add the command manually with the desired engine.
+2025-09-02 12:13:06,615 - INFO - nms_postprocess_command.py:720 - The layer yolo_v8_custom/conv41 was detected as reg_layer.
+2025-09-02 12:13:06,615 - INFO - nms_postprocess_command.py:720 - The layer yolo_v8_custom/conv42 was detected as cls_layer.
+2025-09-02 12:13:06,615 - INFO - nms_postprocess_command.py:720 - The layer yolo_v8_custom/conv52 was detected as reg_layer.
+2025-09-02 12:13:06,615 - INFO - nms_postprocess_command.py:720 - The layer yolo_v8_custom/conv53 was detected as cls_layer.
+2025-09-02 12:13:06,616 - INFO - nms_postprocess_command.py:720 - The layer yolo_v8_custom/conv62 was detected as reg_layer.
+2025-09-02 12:13:06,616 - INFO - nms_postprocess_command.py:720 - The layer yolo_v8_custom/conv63 was detected as cls_layer.
+2025-09-02 12:13:06,616 - INFO - nms_postprocess_command.py:514 - Using the default score threshold of 0.001 (range is [0-1], where 1 performs maximum suppression) and IoU threshold of 0.7 (range is [0-1], where 0 performs maximum suppression).
+Changing the values is possible using the nms_postprocess model script command.
+2025-09-02 12:13:06,619 - INFO - nms_postprocess.py:1108 - The activation function of layer yolo_v8_custom/conv42 was replaced by a Sigmoid
+2025-09-02 12:13:06,619 - INFO - nms_postprocess.py:1108 - The activation function of layer yolo_v8_custom/conv53 was replaced by a Sigmoid
+2025-09-02 12:13:06,619 - INFO - nms_postprocess.py:1108 - The activation function of layer yolo_v8_custom/conv63 was replaced by a Sigmoid
+2025-09-02 12:13:06,932 - IMPORTANT - sdk_backend.py:1191 - Starting Model Optimization
+2025-09-02 12:13:07,072 - WARNING - mo_config.py:168 - Reducing optimization level to 0 (the accuracy won't be optimized and compression won't be used) because there's less data than the recommended amount (1024), and there's no available GPU
+2025-09-02 12:13:07,072 - WARNING - mo_config.py:233 - Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+2025-09-02 12:13:07,073 - INFO - mo_script_parser.py:91 - Model received quantization params from the hn
+2025-09-02 12:13:08,998 - INFO - algorithm_base.py:149 - MatmulDecompose skipped
+2025-09-02 12:13:09,068 - INFO - algorithm_base.py:152 - Starting Mixed Precision
+2025-09-02 12:13:09,504 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.43)
+2025-09-02 12:13:09,601 - INFO - algorithm_base.py:149 - LayerNorm Decomposition skipped
+2025-09-02 12:13:09,828 - INFO - algorithm_base.py:152 - Starting Statistics Collector
+2025-09-02 12:13:09,834 - INFO - stats_collection.py:89 - Using dataset with 64 entries for calibration
+2025-09-02 12:13:49,154 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:39.32)
+2025-09-02 12:13:50,046 - INFO - algorithm_base.py:152 - Starting Fix zp_comp Encoding
+2025-09-02 12:13:50,047 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+2025-09-02 12:13:50,047 - INFO - algorithm_base.py:149 - Matmul Equalization skipped
+2025-09-02 12:13:50,047 - INFO - algorithm_base.py:152 - Starting MatmulDecomposeFix
+2025-09-02 12:13:50,047 - INFO - algorithm_base.py:168 - Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+2025-09-02 12:13:57,962 - INFO - main.py:34 - Current Time: 12:13:57, 09/02/25
+2025-09-02 12:13:58,968 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz, Number Of Cores: 8, Utilization: 2.6%
+2025-09-02 12:13:58,969 - INFO - main.py:50 - Memory: Total: 7GB, Available: 2GB
+2025-09-02 12:13:58,969 - INFO - main.py:54 - System info: OS: Linux, Kernel: 6.14.0-28-generic
+2025-09-02 12:13:58,971 - INFO - main.py:55 - Hailo DFC Version: 3.32.0
+2025-09-02 12:13:58,973 - INFO - main.py:60 - HailoRT Version: 4.22.0
+2025-09-02 12:13:58,984 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2025-09-02 12:13:58,984 - INFO - main.py:109 - Running `hailo optimize hailo_build/hef/model.har --hw-arch hailo8l --use-random-calib-set --output-har-path hailo_build/hef/model_quant.har`
+2025-09-02 12:13:59,067 - WARNING - client_runner.py:1904 - hw_arch from HAR is hailo8 but client runner was initialized with hailo8l. Using hailo8l
+2025-09-02 12:13:59,728 - INFO - nms_postprocess_command.py:385 - For NMS architecture yolov8 the default engine is cpu. For other engine please use the 'engine' flag in the nms_postprocess model script command. If the NMS has been added during parsing, please parse the model again without confirming the addition of the NMS, and add the command manually with the desired engine.
+2025-09-02 12:13:59,729 - INFO - nms_postprocess_command.py:720 - The layer yolo_v8_custom/conv41 was detected as reg_layer.
+2025-09-02 12:13:59,729 - INFO - nms_postprocess_command.py:720 - The layer yolo_v8_custom/conv42 was detected as cls_layer.
+2025-09-02 12:13:59,729 - INFO - nms_postprocess_command.py:720 - The layer yolo_v8_custom/conv52 was detected as reg_layer.
+2025-09-02 12:13:59,729 - INFO - nms_postprocess_command.py:720 - The layer yolo_v8_custom/conv53 was detected as cls_layer.
+2025-09-02 12:13:59,729 - INFO - nms_postprocess_command.py:720 - The layer yolo_v8_custom/conv62 was detected as reg_layer.
+2025-09-02 12:13:59,729 - INFO - nms_postprocess_command.py:720 - The layer yolo_v8_custom/conv63 was detected as cls_layer.
+2025-09-02 12:13:59,729 - INFO - nms_postprocess_command.py:514 - Using the default score threshold of 0.001 (range is [0-1], where 1 performs maximum suppression) and IoU threshold of 0.7 (range is [0-1], where 0 performs maximum suppression).
+Changing the values is possible using the nms_postprocess model script command.
+2025-09-02 12:13:59,732 - INFO - nms_postprocess.py:1108 - The activation function of layer yolo_v8_custom/conv42 was replaced by a Sigmoid
+2025-09-02 12:13:59,732 - INFO - nms_postprocess.py:1108 - The activation function of layer yolo_v8_custom/conv53 was replaced by a Sigmoid
+2025-09-02 12:13:59,732 - INFO - nms_postprocess.py:1108 - The activation function of layer yolo_v8_custom/conv63 was replaced by a Sigmoid
+2025-09-02 12:13:59,884 - INFO - calib_set_generator.py:130 - Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+2025-09-02 12:14:00,064 - IMPORTANT - sdk_backend.py:1191 - Starting Model Optimization
+2025-09-02 12:14:00,208 - WARNING - mo_config.py:168 - Reducing optimization level to 0 (the accuracy won't be optimized and compression won't be used) because there's no available GPU
+2025-09-02 12:14:00,209 - WARNING - mo_config.py:233 - Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+2025-09-02 12:14:00,209 - INFO - mo_script_parser.py:91 - Model received quantization params from the hn
+2025-09-02 12:14:02,103 - INFO - algorithm_base.py:149 - MatmulDecompose skipped
+2025-09-02 12:14:02,173 - INFO - algorithm_base.py:152 - Starting Mixed Precision
+2025-09-02 12:14:02,601 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.43)
+2025-09-02 12:14:02,693 - INFO - algorithm_base.py:149 - LayerNorm Decomposition skipped
+2025-09-02 12:14:02,913 - INFO - algorithm_base.py:152 - Starting Statistics Collector
+2025-09-02 12:14:02,918 - INFO - stats_collection.py:89 - Using dataset with 64 entries for calibration
+2025-09-02 12:14:42,866 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:39.95)
+2025-09-02 12:14:43,753 - INFO - algorithm_base.py:152 - Starting Fix zp_comp Encoding
+2025-09-02 12:14:43,753 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+2025-09-02 12:14:43,754 - INFO - algorithm_base.py:149 - Matmul Equalization skipped
+2025-09-02 12:14:43,754 - INFO - algorithm_base.py:152 - Starting MatmulDecomposeFix
+2025-09-02 12:14:43,754 - INFO - algorithm_base.py:168 - Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+2025-09-02 12:14:50,801 - INFO - algorithm_base.py:149 - Finetune encoding skipped
+2025-09-02 12:14:50,806 - INFO - algorithm_base.py:149 - Bias Correction skipped
+2025-09-02 12:14:50,819 - INFO - algorithm_base.py:149 - Adaround skipped
+2025-09-02 12:14:50,825 - INFO - algorithm_base.py:149 - Quantization-Aware Fine-Tuning skipped
+2025-09-02 12:14:56,354 - INFO - algorithm_base.py:149 - Layer Noise Analysis skipped
+2025-09-02 12:14:56,480 - INFO - quant_checker.py:171 - The calibration set seems to not be normalized, because the values range is [(0.0, 1.0), (0.0, 1.0), (0.0, 1.0)].
+Since the neural core works in 8-bit (between 0 to 255), a quantization will occur on the CPU of the runtime platform.
+Add a normalization layer to the model to offload the normalization to the neural core.
+Refer to the user guide Hailo Dataflow Compiler user guide / Model Optimization / Optimization Related Model Script Commands / model_modification_commands / normalization for details.
+2025-09-02 12:15:01,202 - IMPORTANT - sdk_backend.py:1203 - Model Optimization is done
+2025-09-02 12:15:02,332 - INFO - client_runner.py:1881 - Saved HAR to: /work/hailo_build/hef/model_quant.har
+2025-09-02 12:15:28,019 - INFO - main.py:34 - Current Time: 12:15:28, 09/02/25
+2025-09-02 12:15:29,025 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz, Number Of Cores: 8, Utilization: 11.7%
+2025-09-02 12:15:29,026 - INFO - main.py:50 - Memory: Total: 7GB, Available: 2GB
+2025-09-02 12:15:29,026 - INFO - main.py:54 - System info: OS: Linux, Kernel: 6.14.0-28-generic
+2025-09-02 12:15:29,028 - INFO - main.py:55 - Hailo DFC Version: 3.32.0
+2025-09-02 12:15:29,032 - INFO - main.py:60 - HailoRT Version: 4.22.0
+2025-09-02 12:15:29,041 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2025-09-02 12:15:29,041 - INFO - main.py:109 - Running `hailo compiler hailo_build/hef/model_quant.har --hw-arch hailo8l --output-dir hailo_build/hef`
+2025-09-02 12:15:31,389 - INFO - compiler_cli.py:81 - Compiling network
+2025-09-02 12:15:31,425 - INFO - hailo_tools_runner.py:510 - To achieve optimal performance, set the compiler_optimization_level to "max" by adding performance_param(compiler_optimization_level=max) to the model script. Note that this may increase compilation time.
+2025-09-02 12:26:42,759 - INFO - compiler_cli.py:86 - Compilation complete
+2025-09-02 12:26:42,771 - INFO - compiler_cli.py:91 - Saved HEF to: /work/hailo_build/hef/yolo_v8_custom.hef
+2025-09-02 12:26:44,939 - INFO - client_runner.py:1881 - Saved HAR to: /work/hailo_build/hef/yolo_v8_custom_compiled.har
+2025-09-02 12:28:41,718 - INFO - main.py:34 - Current Time: 12:28:41, 09/02/25
+2025-09-02 12:28:42,728 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz, Number Of Cores: 8, Utilization: 0.8%
+2025-09-02 12:28:42,729 - INFO - main.py:50 - Memory: Total: 7GB, Available: 2GB
+2025-09-02 12:28:42,729 - INFO - main.py:54 - System info: OS: Linux, Kernel: 6.14.0-28-generic
+2025-09-02 12:28:42,731 - INFO - main.py:55 - Hailo DFC Version: 3.32.0
+2025-09-02 12:28:42,732 - INFO - main.py:60 - HailoRT Version: 4.22.0
+2025-09-02 12:28:42,742 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2025-09-02 12:28:42,743 - INFO - main.py:109 - Running `hailo parse-hef hailo_build/hef/yolo_v8_custom.hef`
+2025-09-02 12:48:43,853 - INFO - main.py:34 - Current Time: 12:48:43, 09/02/25
+2025-09-02 12:48:44,867 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz, Number Of Cores: 8, Utilization: 1.0%
+2025-09-02 12:48:44,868 - INFO - main.py:50 - Memory: Total: 7GB, Available: 1GB
+2025-09-02 12:48:44,868 - INFO - main.py:54 - System info: OS: Linux, Kernel: 6.14.0-28-generic
+2025-09-02 12:48:44,870 - INFO - main.py:55 - Hailo DFC Version: 3.32.0
+2025-09-02 12:48:44,873 - INFO - main.py:60 - HailoRT Version: 4.22.0
+2025-09-02 12:48:44,881 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2025-09-02 12:48:44,881 - INFO - main.py:109 - Running `hailo parse-hef hailo_build/hef/yolo_v8_custom.hef`
+2025-09-04 12:41:44,506 - INFO - main.py:34 - Current Time: 12:41:44, 09/04/25
+2025-09-04 12:41:45,518 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz, Number Of Cores: 8, Utilization: 4.4%
+2025-09-04 12:41:45,519 - INFO - main.py:50 - Memory: Total: 7GB, Available: 1GB
+2025-09-04 12:41:45,519 - INFO - main.py:54 - System info: OS: Linux, Kernel: 6.14.0-29-generic
+2025-09-04 12:41:45,521 - INFO - main.py:55 - Hailo DFC Version: 3.32.0
+2025-09-04 12:41:45,523 - INFO - main.py:60 - HailoRT Version: 4.22.0
+2025-09-04 12:41:45,535 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2025-09-04 12:41:45,535 - INFO - main.py:109 - Running `hailo parser onnx hailo_build/exports/best.onnx --net-name yolo_v8_custom --har-path hailo_build/hef/model.har --input-format images=NCHW --tensor-shapes images=[1,3,960,960] -y --parsing-report-path hailo_build/logs/1_parse.log`
+2025-09-04 12:41:45,617 - INFO - parser.py:158 - Translation started on ONNX model yolo_v8_custom
+2025-09-04 12:41:45,727 - INFO - parser.py:193 - Restored ONNX model yolo_v8_custom (completion time: 00:00:00.11)
+2025-09-04 12:41:46,026 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.41)
+2025-09-04 12:41:48,430 - INFO - parser.py:274 - Simplified ONNX model for a parsing retry attempt (completion time: 00:00:02.81)
+2025-09-04 12:41:49,661 - INFO - parser_cli.py:247 - According to recommendations, retrying parsing with end node names: ['/model.22/Concat_3'].
+2025-09-04 12:41:49,661 - INFO - parser.py:158 - Translation started on ONNX model yolo_v8_custom
+2025-09-04 12:41:49,700 - INFO - parser.py:193 - Restored ONNX model yolo_v8_custom (completion time: 00:00:00.04)
+2025-09-04 12:41:49,934 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.27)
+2025-09-04 12:41:51,123 - INFO - onnx_translator.py:2640 - NMS structure of yolov8 (or equivalent architecture) was detected.
+2025-09-04 12:41:51,124 - INFO - onnx_translator.py:2642 - In order to use HailoRT post-processing capabilities, these end node names should be used: /model.22/cv2.0/cv2.0.2/Conv /model.22/cv3.0/cv3.0.2/Conv /model.22/cv2.1/cv2.1.2/Conv /model.22/cv3.1/cv3.1.2/Conv /model.22/cv2.2/cv2.2.2/Conv /model.22/cv3.2/cv3.2.2/Conv.
+2025-09-04 12:41:51,219 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'yolo_v8_custom/input_layer1'.
+2025-09-04 12:41:51,219 - INFO - parser.py:367 - End nodes mapped from original model: '/model.22/Concat_3'.
+2025-09-04 12:41:51,306 - INFO - parser.py:288 - Translation completed on ONNX model yolo_v8_custom (completion time: 00:00:01.65)
+2025-09-04 12:41:51,307 - WARNING - client_runner.py:1738 - hw_arch parameter not given, using the default hw_arch hailo8.
+If another device is the target, please run again using one of hailo8, hailo8r, hailo8l
+2025-09-04 12:41:52,611 - INFO - parser.py:158 - Translation started on ONNX model yolo_v8_custom
+2025-09-04 12:41:52,651 - INFO - parser.py:193 - Restored ONNX model yolo_v8_custom (completion time: 00:00:00.04)
+2025-09-04 12:41:52,928 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.32)
+2025-09-04 12:41:53,987 - INFO - onnx_translator.py:2640 - NMS structure of yolov8 (or equivalent architecture) was detected.
+2025-09-04 12:41:53,987 - INFO - onnx_translator.py:2642 - In order to use HailoRT post-processing capabilities, these end node names should be used: /model.22/cv2.0/cv2.0.2/Conv /model.22/cv3.0/cv3.0.2/Conv /model.22/cv2.1/cv2.1.2/Conv /model.22/cv3.1/cv3.1.2/Conv /model.22/cv2.2/cv2.2.2/Conv /model.22/cv3.2/cv3.2.2/Conv.
+2025-09-04 12:41:54,076 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'yolo_v8_custom/input_layer1'.
+2025-09-04 12:41:54,076 - INFO - parser.py:367 - End nodes mapped from original model: '/model.22/cv2.0/cv2.0.2/Conv', '/model.22/cv3.0/cv3.0.2/Conv', '/model.22/cv2.1/cv2.1.2/Conv', '/model.22/cv3.1/cv3.1.2/Conv', '/model.22/cv2.2/cv2.2.2/Conv', '/model.22/cv3.2/cv3.2.2/Conv'.
+2025-09-04 12:41:54,158 - INFO - parser.py:288 - Translation completed on ONNX model yolo_v8_custom (completion time: 00:00:01.55)
+2025-09-04 12:41:55,110 - INFO - client_runner.py:504 - Appending model script commands to yolo_v8_custom from string
+2025-09-04 12:41:55,144 - INFO - parser_cli.py:332 - Added nms postprocess command to model script.
+2025-09-04 12:41:55,276 - INFO - client_runner.py:1881 - Saved HAR to: /work/hailo_build/hef/model.har
+2025-09-04 12:41:55,276 - INFO - client_runner.py:2280 - Saved parsing report to: hailo_build/logs/1_parse.log
+2025-09-04 14:24:08,827 - INFO - main.py:34 - Current Time: 14:24:08, 09/04/25
+2025-09-04 14:24:09,833 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz, Number Of Cores: 8, Utilization: 1.1%
+2025-09-04 14:24:09,834 - INFO - main.py:50 - Memory: Total: 7GB, Available: 1GB
+2025-09-04 14:24:09,835 - INFO - main.py:54 - System info: OS: Linux, Kernel: 6.14.0-29-generic
+2025-09-04 14:24:09,836 - INFO - main.py:55 - Hailo DFC Version: 3.32.0
+2025-09-04 14:24:09,838 - INFO - main.py:60 - HailoRT Version: 4.22.0
+2025-09-04 14:24:09,846 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2025-09-04 14:24:09,846 - INFO - main.py:109 - Running `hailo parser onnx hailo_build/exports/best.onnx --net-name yolo_v8_custom --har-path hailo_build/hef/model.har --input-format images=NCHW --tensor-shapes images=[1,3,960,960] -y --parsing-report-path hailo_build/logs/1_parse.log`
+2025-09-04 14:24:09,885 - INFO - parser.py:158 - Translation started on ONNX model yolo_v8_custom
+2025-09-04 14:24:09,964 - INFO - parser.py:193 - Restored ONNX model yolo_v8_custom (completion time: 00:00:00.08)
+2025-09-04 14:24:10,206 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.32)
+2025-09-04 14:24:11,745 - INFO - parser.py:274 - Simplified ONNX model for a parsing retry attempt (completion time: 00:00:01.86)
+2025-09-04 14:24:12,596 - INFO - parser_cli.py:247 - According to recommendations, retrying parsing with end node names: ['/model.22/Concat_3'].
+2025-09-04 14:24:12,597 - INFO - parser.py:158 - Translation started on ONNX model yolo_v8_custom
+2025-09-04 14:24:12,647 - INFO - parser.py:193 - Restored ONNX model yolo_v8_custom (completion time: 00:00:00.05)
+2025-09-04 14:24:12,829 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.23)
+2025-09-04 14:24:13,737 - INFO - onnx_translator.py:2640 - NMS structure of yolov8 (or equivalent architecture) was detected.
+2025-09-04 14:24:13,738 - INFO - onnx_translator.py:2642 - In order to use HailoRT post-processing capabilities, these end node names should be used: /model.22/cv2.0/cv2.0.2/Conv /model.22/cv3.0/cv3.0.2/Conv /model.22/cv2.1/cv2.1.2/Conv /model.22/cv3.1/cv3.1.2/Conv /model.22/cv2.2/cv2.2.2/Conv /model.22/cv3.2/cv3.2.2/Conv.
+2025-09-04 14:24:13,833 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'yolo_v8_custom/input_layer1'.
+2025-09-04 14:24:13,833 - INFO - parser.py:367 - End nodes mapped from original model: '/model.22/Concat_3'.
+2025-09-04 14:24:13,900 - INFO - parser.py:288 - Translation completed on ONNX model yolo_v8_custom (completion time: 00:00:01.30)
+2025-09-04 14:24:13,901 - WARNING - client_runner.py:1738 - hw_arch parameter not given, using the default hw_arch hailo8.
+If another device is the target, please run again using one of hailo8, hailo8r, hailo8l
+2025-09-04 14:24:15,619 - INFO - parser.py:158 - Translation started on ONNX model yolo_v8_custom
+2025-09-04 14:24:15,656 - INFO - parser.py:193 - Restored ONNX model yolo_v8_custom (completion time: 00:00:00.04)
+2025-09-04 14:24:15,867 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.25)
+2025-09-04 14:24:16,701 - INFO - onnx_translator.py:2640 - NMS structure of yolov8 (or equivalent architecture) was detected.
+2025-09-04 14:24:16,701 - INFO - onnx_translator.py:2642 - In order to use HailoRT post-processing capabilities, these end node names should be used: /model.22/cv2.0/cv2.0.2/Conv /model.22/cv3.0/cv3.0.2/Conv /model.22/cv2.1/cv2.1.2/Conv /model.22/cv3.1/cv3.1.2/Conv /model.22/cv2.2/cv2.2.2/Conv /model.22/cv3.2/cv3.2.2/Conv.
+2025-09-04 14:24:16,764 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'yolo_v8_custom/input_layer1'.
+2025-09-04 14:24:16,764 - INFO - parser.py:367 - End nodes mapped from original model: '/model.22/cv2.0/cv2.0.2/Conv', '/model.22/cv3.0/cv3.0.2/Conv', '/model.22/cv2.1/cv2.1.2/Conv', '/model.22/cv3.1/cv3.1.2/Conv', '/model.22/cv2.2/cv2.2.2/Conv', '/model.22/cv3.2/cv3.2.2/Conv'.
+2025-09-04 14:24:16,825 - INFO - parser.py:288 - Translation completed on ONNX model yolo_v8_custom (completion time: 00:00:01.21)
+2025-09-04 14:24:17,492 - INFO - client_runner.py:504 - Appending model script commands to yolo_v8_custom from string
+2025-09-04 14:24:17,515 - INFO - parser_cli.py:332 - Added nms postprocess command to model script.
+2025-09-04 14:24:17,621 - INFO - client_runner.py:1881 - Saved HAR to: /work/hailo_build/hef/model.har
+2025-09-04 14:24:17,621 - INFO - client_runner.py:2280 - Saved parsing report to: hailo_build/logs/1_parse.log
+2025-09-04 14:24:23,394 - INFO - main.py:34 - Current Time: 14:24:23, 09/04/25
+2025-09-04 14:24:24,400 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz, Number Of Cores: 8, Utilization: 1.9%
+2025-09-04 14:24:24,401 - INFO - main.py:50 - Memory: Total: 7GB, Available: 2GB
+2025-09-04 14:24:24,401 - INFO - main.py:54 - System info: OS: Linux, Kernel: 6.14.0-29-generic
+2025-09-04 14:24:24,403 - INFO - main.py:55 - Hailo DFC Version: 3.32.0
+2025-09-04 14:24:24,405 - INFO - main.py:60 - HailoRT Version: 4.22.0
+2025-09-04 14:24:24,413 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2025-09-04 14:24:24,413 - INFO - main.py:109 - Running `hailo parser onnx hailo_build/exports/best.onnx --net-name yolo_v8_custom --har-path hailo_build/hef/model.har --input-format images=NCHW --tensor-shapes images=[1,3,960,960] --end-node-names /model.22/Concat_3 -y --parsing-report-path hailo_build/logs/1_parse.log`
+2025-09-04 14:24:24,450 - INFO - parser.py:158 - Translation started on ONNX model yolo_v8_custom
+2025-09-04 14:24:24,521 - INFO - parser.py:193 - Restored ONNX model yolo_v8_custom (completion time: 00:00:00.07)
+2025-09-04 14:24:24,736 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.29)
+2025-09-04 14:24:25,489 - INFO - onnx_translator.py:2640 - NMS structure of yolov8 (or equivalent architecture) was detected.
+2025-09-04 14:24:25,489 - INFO - onnx_translator.py:2642 - In order to use HailoRT post-processing capabilities, these end node names should be used: /model.22/cv2.0/cv2.0.2/Conv /model.22/cv3.0/cv3.0.2/Conv /model.22/cv2.1/cv2.1.2/Conv /model.22/cv3.1/cv3.1.2/Conv /model.22/cv2.2/cv2.2.2/Conv /model.22/cv3.2/cv3.2.2/Conv.
+2025-09-04 14:24:25,557 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'yolo_v8_custom/input_layer1'.
+2025-09-04 14:24:25,557 - INFO - parser.py:367 - End nodes mapped from original model: '/model.22/Concat_3'.
+2025-09-04 14:24:25,619 - INFO - parser.py:288 - Translation completed on ONNX model yolo_v8_custom (completion time: 00:00:01.17)
+2025-09-04 14:24:25,620 - WARNING - client_runner.py:1738 - hw_arch parameter not given, using the default hw_arch hailo8.
+If another device is the target, please run again using one of hailo8, hailo8r, hailo8l
+2025-09-04 14:24:26,426 - INFO - parser.py:158 - Translation started on ONNX model yolo_v8_custom
+2025-09-04 14:24:26,476 - INFO - parser.py:193 - Restored ONNX model yolo_v8_custom (completion time: 00:00:00.05)
+2025-09-04 14:24:26,677 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.25)
+2025-09-04 14:24:27,390 - INFO - onnx_translator.py:2640 - NMS structure of yolov8 (or equivalent architecture) was detected.
+2025-09-04 14:24:27,390 - INFO - onnx_translator.py:2642 - In order to use HailoRT post-processing capabilities, these end node names should be used: /model.22/cv2.0/cv2.0.2/Conv /model.22/cv3.0/cv3.0.2/Conv /model.22/cv2.1/cv2.1.2/Conv /model.22/cv3.1/cv3.1.2/Conv /model.22/cv2.2/cv2.2.2/Conv /model.22/cv3.2/cv3.2.2/Conv.
+2025-09-04 14:24:27,455 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'yolo_v8_custom/input_layer1'.
+2025-09-04 14:24:27,455 - INFO - parser.py:367 - End nodes mapped from original model: '/model.22/cv2.0/cv2.0.2/Conv', '/model.22/cv3.0/cv3.0.2/Conv', '/model.22/cv2.1/cv2.1.2/Conv', '/model.22/cv3.1/cv3.1.2/Conv', '/model.22/cv2.2/cv2.2.2/Conv', '/model.22/cv3.2/cv3.2.2/Conv'.
+2025-09-04 14:24:27,640 - INFO - parser.py:288 - Translation completed on ONNX model yolo_v8_custom (completion time: 00:00:01.21)
+2025-09-04 14:24:28,314 - INFO - client_runner.py:504 - Appending model script commands to yolo_v8_custom from string
+2025-09-04 14:24:28,341 - INFO - parser_cli.py:332 - Added nms postprocess command to model script.
+2025-09-04 14:24:28,442 - INFO - client_runner.py:1881 - Saved HAR to: /work/hailo_build/hef/model.har
+2025-09-04 14:24:28,442 - INFO - client_runner.py:2280 - Saved parsing report to: hailo_build/logs/1_parse.log
